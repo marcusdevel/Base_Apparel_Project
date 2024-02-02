@@ -113,6 +113,10 @@ main {
 }
 
 @media (min-width: 500px) {
+body{
+    background: url(images/bg-pattern-desktop.svg) no-repeat center/cover;
+  
+}
 
     .container {
         display: flex;
@@ -124,12 +128,20 @@ main {
 
     main {
         margin: 0;
-        width: 100%
+        width: 100%;
+       padding-top: 0;
+
+        
     }
 
     .image {
-        order: 1;
+        
         width: 100%;
+        
+    }
+    .image img{
+       height:100vh;
+       
     }
 
     .text {
