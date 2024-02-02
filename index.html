@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <section class="container">
+
+      <div class="images">
+        <div class="bg-mobile">
+          <img src="images/logo.svg" alt="logo">
+        </div>
+        <div class="image">
+          <img src="images/hero-mobile.jpg" alt="hero-mobile">
+        </div>
+      </div>
+
+      <section class="text_form">
+        <div class="bg-desktop">
+          <img src="images/logo.svg" alt="logo">
+        </div>
+        <div class="text">
+          <h1><span class="logo">We're</span><br> coming <br> soon</h1>
+          <p>Hello fellow shoppers! We're currently building our new fashion store.
+            Add your email below to stay up-to-date with announcements and our launch deals.
+          </p>
+        </div>
+        <div class="form">
+          <form>
+            <label for="email"></label>
+            <input type class="email" id="email" name="email" placeholder="Email Address" required>
+            <p class="error">Please provide a valid email</p>
+
+          </form>
+
+          <p id="errormessage"></p>
+          <button class="btn" type="button" onclick="validateEmail()">
+            <img src="images/icon-arrow.svg" alt="enviar">
+          </button>
+
+        </div>
+      </section>
+    </section>
+  </main>
+
+
+
+  <script>
+    function validateEmail() {
+      var emailInput = document.getElementById("email");
+      var errorMessage = document.querySelector(".error");
+
+      // Expressão regular para validar o formato do e-mail
+      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      // Verifica se o e-mail inserido corresponde ao padrão
+      if (!emailPattern.test(emailInput.value)) {
+        errorMessage.style.display = "block"; // Exibe a mensagem de erro
+      } else {
+        errorMessage.style.display = "none"; // Oculta a mensagem de erro
+        alert("Obrigado por se cadastrar!"); // Exibe uma mensagem de sucesso
+      }
+    }
+  </script>
+
+
+</body>
+
+
+</html>
