@@ -27,8 +27,8 @@ main {
 }
 
 .form {
-    display: flex;
-    align-items: center;
+     display: flex;
+    align-items: center; 
     justify-content: center;
     margin-left: 30px;
 }
@@ -37,7 +37,9 @@ main {
     width: 100%;
     min-height: auto;
 }
-
+.image-desktop img {
+    display: none;
+}
 .error {
     display: none;
     color: red;
@@ -68,12 +70,16 @@ main {
     color: hsl(0, 36%, 70%);
     font-weight: normal;
 }
+.text .logo{
+    font-weight: lighter;
+}
 
 .text h1 {
     padding: 15px 0 10px;
     text-transform: uppercase;
     letter-spacing: 0.50rem;
 }
+
 
 .text p {
     color: hsl(0, 36%, 70%);
@@ -97,6 +103,7 @@ main {
     background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     border: none;
     border-radius: 30px;
+    margin-top: 15px;
     margin-bottom: 20px;
     width: 70px;
     transform: translate(-50%, 3px);
@@ -105,6 +112,9 @@ main {
 .btn img {
     height: 25%;
     width: 25%;
+    
+    
+    
 }
 
 .btn:hover {
@@ -115,7 +125,7 @@ main {
 @media (min-width: 500px) {
 body{
     background: url(images/bg-pattern-desktop.svg) no-repeat center/cover;
-  
+    
 }
 
     .container {
@@ -124,24 +134,27 @@ body{
         align-items: center;
         justify-content: center;
         min-height: 100vh;
+        
     }
 
     main {
         margin: 0;
         width: 100%;
        padding-top: 0;
-
-        
-    }
-
-    .image {
-        
-        width: 100%;
-        
-    }
-    .image img{
-       height:100vh;
        
+
+        
+    }
+
+   
+    .image img{
+       display: none;
+       
+    }
+    
+    .image-desktop img {
+        display: block;
+        width: 100%;     
     }
 
     .text {
@@ -155,21 +168,26 @@ body{
     .text p {
         line-height: 1.2rem;
         padding-left: 12px;
+        letter-spacing: 0.086rem;
     }
+
 
     .text h1,
     .logo {
         text-align: left;
-        font-size: 30px;
+        font-size: 60px;
         padding-left: 10px;
+        letter-spacing: 1rem;
+        font-weight: normal;
     }
 
     .bg-mobile img {
         display: none;
     }
 
+
     .form {
-        margin-left: -3px;
+        margin-left: 30px;
         display: flex;
     }
 
@@ -184,10 +202,17 @@ body{
         flex-direction: column;
 
     }
-}
-
-.bg-desktop img {
-    width: 70px;
-    margin: 5px 0 20px 20px;
-    width: 100px;
+    
+    .bg-desktop img {
+        width: 70px;
+        margin: 5px 0 20px 20px;
+        width: 100px;
+    }
+    
+    .email {
+        margin-left: -45px;
+        
+        width: 360px;
+    } 
+    
 }
