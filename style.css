@@ -33,13 +33,13 @@ main {
     margin-left: 30px;
 }
 
-.image {
+/* .image {
     display: grid;
     justify-items: center;
-}
+} */
 
 .image img {
-    width: 85%;
+    width: 100%;
     min-height: auto;
 
 
@@ -53,6 +53,7 @@ main {
 .error {
     display: none;
     color: red;
+    padding: 0 150px;
 }
 
 .bg-mobile img {
