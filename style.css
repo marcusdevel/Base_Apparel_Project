@@ -53,7 +53,7 @@ main {
 .error {
     display: none;
     color: red;
-    padding: 0 150px;
+    padding: 0 110px;
 }
 
 .bg-mobile img {
