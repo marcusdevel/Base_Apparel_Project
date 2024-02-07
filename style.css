@@ -27,25 +27,29 @@ main {
 }
 
 .form {
-     display: flex;
-    align-items: center; 
+    display: flex;
+    align-items: center;
     justify-content: center;
     margin-left: 30px;
 }
-.image{
-    display:grid;
+
+.image {
+    display: grid;
     justify-items: center;
 }
+
 .image img {
     width: 85%;
     min-height: auto;
-    
-    
-    
+
+
+
 }
+
 .image-desktop img {
     display: none;
 }
+
 .error {
     display: none;
     color: red;
@@ -76,7 +80,8 @@ main {
     color: hsl(0, 36%, 70%);
     font-weight: normal;
 }
-.text .logo{
+
+.text .logo {
     font-weight: lighter;
 }
 
@@ -118,9 +123,9 @@ main {
 .btn img {
     height: 25%;
     width: 25%;
-    
-    
-    
+
+
+
 }
 
 .btn:hover {
@@ -129,10 +134,10 @@ main {
 }
 
 @media (min-width: 500px) {
-body{
-    background: url(images/bg-pattern-desktop.svg) no-repeat center/cover;
-    
-}
+    body {
+        background: url(images/bg-pattern-desktop.svg) no-repeat center/cover;
+
+    }
 
     .container {
         display: flex;
@@ -140,27 +145,27 @@ body{
         align-items: center;
         justify-content: center;
         min-height: 100vh;
-        
+
     }
 
     main {
         margin: 0;
         width: 100%;
-       padding-top: 0;
-       
+        padding-top: 0;
 
-        
+
+
     }
 
-   
-    .image img{
-       display: none;
-       
+
+    .image img {
+        display: none;
+
     }
-    
+
     .image-desktop img {
         display: block;
-        width: 100%;     
+        width: 100%;
     }
 
     .text {
@@ -197,6 +202,16 @@ body{
         display: flex;
     }
 
+    .form-error {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-error p {
+     padding: 0 130px;
+        
+    }
+    
+
     .email {
         width: 325px;
         opacity: 0.3;
@@ -208,17 +223,17 @@ body{
         flex-direction: column;
 
     }
-    
+
     .bg-desktop img {
         width: 70px;
         margin: 5px 0 20px 20px;
         width: 100px;
     }
-    
+
     .email {
         margin-left: -45px;
-        
+
         width: 360px;
-    } 
-    
+    }
+
 }
