@@ -33,10 +33,7 @@ main {
     margin-left: 30px;
 }
 
-/* .image {
-    display: grid;
-    justify-items: center;
-} */
+
 
 .image img {
     width: 100%;
@@ -166,7 +163,8 @@ main {
 
     .image-desktop img {
         display: block;
-        width: 100%;
+        
+        min-width: 500px;
     }
 
     .text {
